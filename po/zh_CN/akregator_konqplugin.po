@@ -1,0 +1,64 @@
+#
+# Funda Wang <fundawang@linux.net.cn>, 2005.
+# Ni Hui <shuizhuyuanluo@126.com>, 2009.
+# Feng Chao <rainofchaos@gmail.com>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2021-09-27 13:11\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-stable/messages/konqueror/akregator_konqplugin.pot\n"
+"X-Crowdin-File-ID: 4110\n"
+
+#: akregatorplugin.cpp:74
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Add Feed to Akregator"
+msgstr "向 Akregator 添加订阅"
+
+#: konqfeedicon.cpp:143
+#, kde-format
+msgid "Add Feed to Akregator"
+msgstr "向 Akregator 添加订阅"
+
+#: konqfeedicon.cpp:145
+#, kde-format
+msgid "Add Feeds to Akregator"
+msgstr "向 Akregator 添加订阅"
+
+#: konqfeedicon.cpp:154
+#, kde-format
+msgid "Add All Found Feeds to Akregator"
+msgstr "将发现的全部订阅添加到 Akregator"
+
+#: konqfeedicon.cpp:178
+#, kde-format
+msgid "Subscribe to site updates (using news feed)"
+msgstr "订阅网站的更新（使用新闻订阅）"
+
+#: pluginutil.cpp:52 pluginutil.cpp:62
+#, kde-format
+msgid "Imported Feeds"
+msgstr "导入的订阅"
+
+#: pluginutil.cpp:54
+#, kde-format
+msgid "Unable to contact Akregator via D-Bus"
+msgstr "无法通过 D-Bus 联系 Akregator"
+
+#: pluginutil.cpp:55
+#, kde-format
+msgctxt "@title:window"
+msgid "D-Bus call failed"
+msgstr "D-Bus 调用失败"

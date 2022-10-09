@@ -1,0 +1,90 @@
+# Translation of searchbarplugin.po to Low Saxon
+#
+# Manfred Wiese <m.j.wiese@web.de>, 2006, 2010, 2011.
+# Sönke Dibbern <s_dibbern@web.de>, 2006, 2007, 2009, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: searchbarplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2014-02-25 01:13+0100\n"
+"Last-Translator: Sönke Dibbern <s_dibbern@web.de>\n"
+"Language-Team: Low Saxon <kde-i18n-nds@kde.org>\n"
+"Language: nds\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Söökbalken<p>Giff en Söökbegreep in. Wenn Du den Söökbedrief oder Söökdeenst "
+"ännern wullt, klick op dat Lüttbild.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Söökbalken"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Söökbalken aktiveren"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Binnen disse Siet söken"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Söökmaschinen utsöken..."
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr "%1 tofögen..."
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Vörslääg anmaken"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Söök-Warktüüchbalken"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr "URI-Tastkombinatschonen fastleggen"
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Naam:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Tastkombinatschonen:"
+
+#~ msgid "Cancel"
+#~ msgstr "Afbreken"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "%1 Search"
+#~ msgstr "%1-Söök"

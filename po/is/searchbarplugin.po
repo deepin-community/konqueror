@@ -1,0 +1,88 @@
+# translation of searchbarplugin.po to icelandic
+# Þröstur Svanbergsson <throstur@bylur.net>, 2004.
+# Arnar Leosson <leosson@frisurf.no>, 2005.
+# Sveinn í Felli <sveinki@nett.is>, 2009, 2010, 2013.
+# Sveinn í Felli <sv1@fellsnet.is>, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: searchbarplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2015-03-16 09:43+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"\n"
+"\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Leitarslá <p>Sláðu inn leitarorð. Smelltu á táknmyndina til að breyta "
+"leitarhaminum eða þjónustu.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Leitarslá"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Virkja leitarslá"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Finna í þessari síðu"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Veldu leitarvélar..."
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr "Bæta við %1..."
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Virkja tillögu"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Leitar tækjaslá"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr "Stilla flýtilykla á vefslóðir"
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Heiti:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Flýtilyklar:"
+
+#~ msgid "Cancel"
+#~ msgstr "Hætta við"
+
+#~ msgid "OK"
+#~ msgstr "Í lagi"

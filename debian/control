@@ -1,0 +1,131 @@
+Source: konqueror
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+           Sune Vuorela <sune@debian.org>,
+Build-Depends: cmake (>= 3.5~),
+               debhelper-compat (= 13),
+               dh-exec,
+               extra-cmake-modules (>= 5.71.0~),
+               gettext,
+               kinit-dev (>= 5.71.0~),
+               libkf5activities-dev (>= 5.71.0~),
+               libkf5archive-dev (>= 5.71.0~),
+               libkf5bookmarks-dev,
+               libkf5coreaddons-dev,
+               libkf5crash-dev (>= 5.71.0~),
+               libkf5dbusaddons-dev (>= 5.71.0~),
+               libkf5doctools-dev (>= 5.71.0~),
+               libkf5guiaddons-dev (>= 5.71.0~),
+               libkf5i18n-dev,
+               libkf5iconthemes-dev (>= 5.71.0~),
+               libkf5jobwidgets-dev,
+               libkf5kcmutils-dev (>= 5.71.0~),
+               libkf5kio-dev (>= 5.37.0~),
+               libkf5notifications-dev (>= 5.71.0~),
+               libkf5parts-dev (>= 5.71.0~),
+               libkf5sonnet-dev (>= 5.71.0~),
+               libkf5su-dev,
+               libkf5textwidgets-dev,
+               libkf5wallet-dev (>= 5.71.0~),
+               libkf5windowsystem-dev (>= 5.71.0~),
+               libkf5xmlgui-dev,
+               libqt5texttospeech5-dev (>= 5.12.0~),
+               libqt5webkit5-dev,
+               libqt5x11extras5-dev,
+               libx11-dev,
+               pkg-config,
+               pkg-kde-tools (>= 0.12),
+               qtbase5-dev (>= 5.12.0~),
+               qtscript5-dev,
+               qtwebengine5-dev (>= 5.12.0~) [amd64 arm64 armhf i386 mipsel],
+               zlib1g-dev,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://apps.kde.org/en/konqueror
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/konqueror
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/konqueror.git
+
+Package: konq-plugins
+Architecture: any
+Depends: konqueror (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
+Enhances: konqueror
+Recommends: imagemagick
+Description: plugins for Konqueror, the KDE file/web/document browser
+ This package contains a variety of useful plugins for Konqueror, the
+ file manager, web browser and document viewer for KDE.  Many of these
+ plugins will appear in Konqueror's Tools menu.
+ .
+ Web navigation plugins:
+  - Akregator feed icon: allows one to add a feed to Akregator from Konqueror
+  - Auto Refresh: refresh a webpage at a given rate
+  - Bookmarklets: enables the use of bookmarklets, bookmarks containing
+    JavaScript code
+  - Document Relations: displays the document relations of a document
+  - DOM Tree Viewer: view the DOM tree of the current page
+  - KHTML Settings: fast way to change the JavaScript/images/cookies settings
+  - Microformat Icon: displays an icon in the statusbar if the page contains
+    a microformat
+  - Search Bar: launches web searches from the Konqueror's toolbar
+  - Translate: language translation for the current page using Babelfish
+  - UserAgent Changer: quick switch of the UserAgent used for the current site
+  - Website Validators: CSS and HTML validation tools
+  - Web Archiver: creates archives of websites
+  - Crash manager: restores your opened tabs if Konqueror crashes (disabled
+    by default as Konqueror has this feature builtin)
+ .
+ File management plugins:
+  - Image Gallery: an easy way to generate a HTML image gallery
+  - File Size View (kpart): a proportional view of directories and files
+    based on file size
+  - Transform Image (service menu): rotate and flip images
+  - Convert To (service menu): convert and image to another format
+  - Directory Filter (dolphin): filter directory views
+ .
+ This package is part of the KDE base applications module.
+
+Package: konqueror
+Section: web
+Architecture: any
+Provides: info-browser, man-browser, www-browser
+Depends: dolphin, install-info, ${misc:Depends}, ${shlibs:Depends}
+Recommends: kfind
+Suggests: konq-plugins
+Description: advanced file manager, web browser and document viewer
+ Konqueror is the KDE web browser and advanced file manager.
+ .
+ Konqueror is a standards-compliant web browser, supporting HTML 4.01, Java,
+ JavaScript, CSS3, and Netscape plugins such as Flash.
+ .
+ It supports advanced file management on local UNIX filesystems, with flexible
+ views, network transparency, and embedded file viewing.
+ .
+ It is the canvas for many KDE technologies, from remote file access via KIO to
+ component embedding via the KParts object interface, making it one of the most
+ customizable applications available.
+ .
+ This package is part of the KDE base applications module.
+
+Package: libkf5konq-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libkf5konq6 (= ${binary:Version}), libkf5xmlgui-dev, ${misc:Depends}
+Description: development files for the Konqueror libraries
+ This package contains development files for building software that uses the
+ Konqueror libraries.
+ .
+ This package is part of the KDE base applications module.
+
+Package: libkf5konq6
+Section: libs
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: core libraries for Konqueror
+ This package contains libraries used by several KDE 4 applications,
+ particularly Konqueror.
+ .
+ This package is part of the KDE base applications module.

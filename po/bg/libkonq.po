@@ -1,0 +1,241 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Zlatko Popov <zlatkopopov@fsa-bg.org>, 2007, 2008.
+# Yasen Pramatarov <yasen@lindeas.com>, 2009, 2010, 2011, 2013, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: libkonq\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-11-26 02:30+0100\n"
+"PO-Revision-Date: 2021-01-07 11:28+0200\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/konq_popupmenu.cpp:232
+#, kde-format
+msgid "&Open"
+msgstr "&Отваряне"
+
+#: src/konq_popupmenu.cpp:255
+#, kde-format
+msgid "Create &Folder..."
+msgstr "&Създаване на папка..."
+
+#: src/konq_popupmenu.cpp:266
+#, kde-format
+msgid "&Restore"
+msgstr "&Възстановяване"
+
+#: src/konq_popupmenu.cpp:278
+#, kde-format
+msgid "Show Original Directory"
+msgstr "Показване на първоначалната директория"
+
+#: src/konq_popupmenu.cpp:278
+#, kde-format
+msgid "Show Original File"
+msgstr "Показване на първоначалния файл"
+
+#: src/konq_popupmenu.cpp:313
+#, kde-format
+msgid "&Empty Trash Bin"
+msgstr "Изчистване на ко&шчето"
+
+#: src/konq_popupmenu.cpp:325
+#, kde-format
+msgid "&Configure Trash Bin"
+msgstr "&Настройки на кошчето"
+
+#: src/konq_popupmenu.cpp:349
+#, kde-format
+msgid "&Bookmark This Page"
+msgstr "&Отмятане на тази страница"
+
+#: src/konq_popupmenu.cpp:351
+#, kde-format
+msgid "&Bookmark This Location"
+msgstr "&Отмятане на това местоположение"
+
+#: src/konq_popupmenu.cpp:354
+#, kde-format
+msgid "&Bookmark This Folder"
+msgstr "&Отмятане на тази папка"
+
+#: src/konq_popupmenu.cpp:356
+#, kde-format
+msgid "&Bookmark This Link"
+msgstr "&Отмятане на тази препратка"
+
+#: src/konq_popupmenu.cpp:358
+#, kde-format
+msgid "&Bookmark This File"
+msgstr "&Отмятане на този файл"
+
+#: src/konq_popupmenu.cpp:392
+#, kde-format
+msgid "Preview In"
+msgstr "Преглед"
+
+#: src/konq_popupmenu.cpp:406
+#, kde-format
+msgid "Open Terminal Here"
+msgstr "Отваряне на терминал тук"
+
+#: src/konq_popupmenu.cpp:439
+#, kde-format
+msgid "&Properties"
+msgstr "Информа&ция"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Copy To"
+#~ msgstr "Копиране в"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Move To"
+#~ msgstr "Преместване в"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Home Folder"
+#~ msgstr "Домашна папка"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Root Folder"
+#~ msgstr "Коренова папка"
+
+#~ msgctxt "@title:menu in Copy To or Move To submenu"
+#~ msgid "Browse..."
+#~ msgstr "Разглеждане..."
+
+#~ msgctxt "@title:menu"
+#~ msgid "Copy Here"
+#~ msgstr "Копиране"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Move Here"
+#~ msgstr "Преместване"
+
+#~ msgid "You cannot drop a folder on to itself"
+#~ msgstr "Папката не може да бъде преместена върху себе си"
+
+#~ msgid "File name for dropped contents:"
+#~ msgstr "Име на файл за влачения елемент:"
+
+#~ msgid "&Move Here"
+#~ msgstr "&Преместване"
+
+#~ msgid "&Copy Here"
+#~ msgstr "&Копиране"
+
+#~ msgid "&Link Here"
+#~ msgstr "&Създаване на връзка"
+
+#~ msgid "Set as &Wallpaper"
+#~ msgstr "&Използване като тапет"
+
+#~ msgid "C&ancel"
+#~ msgstr "&Отказ"
+
+#~ msgctxt "@action:button"
+#~ msgid "Create directory"
+#~ msgstr "Създаване на директория"
+
+#~ msgctxt "@action:button"
+#~ msgid "Enter a different name"
+#~ msgstr "Въведете различно име"
+
+#~ msgid ""
+#~ "The name \"%1\" starts with a dot, so the directory will be hidden by "
+#~ "default."
+#~ msgstr ""
+#~ "Името \"%1\" започва с точка, затова директорията ще бъде скрита по "
+#~ "подразбиране."
+
+#~ msgctxt "@title:window"
+#~ msgid "Create hidden directory?"
+#~ msgstr "Да се създаде ли скрита директория?"
+
+#~ msgctxt "@label Default name when creating a folder"
+#~ msgid "New Folder"
+#~ msgstr "Нова папка"
+
+#~ msgctxt "@title:window"
+#~ msgid "New Folder"
+#~ msgstr "Нова папка"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Enter folder name:"
+#~ msgstr "Въведете име на папката:"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Paste One Folder"
+#~ msgstr "Вмъкване на една папка"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Paste One File"
+#~ msgstr "Вмъкване на един файл"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Paste One Item"
+#~ msgid_plural "Paste %1 Items"
+#~ msgstr[0] "Вмъкване на един елемент"
+#~ msgstr[1] "Вмъкване на %1 елемента"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Paste Clipboard Contents..."
+#~ msgstr "Вмъкване съдържанието на системния буфер..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Paste"
+#~ msgstr "Вмъкване"
+
+#~ msgid ""
+#~ "Restores this file or directory, back to the location where it was "
+#~ "deleted from initially"
+#~ msgstr ""
+#~ "Възстановяване на този файл или директория на първоначалното му място, от "
+#~ "което е бил изтрит."
+
+#~ msgid ""
+#~ "Opens a new file manager window showing the target of this link, in its "
+#~ "parent directory."
+#~ msgstr ""
+#~ "Отваряне на нов прозорец с родителската директория на тази препратка."
+
+#~ msgid "Share"
+#~ msgstr "Споделяне"
+
+#~ msgctxt "@info"
+#~ msgid "Close"
+#~ msgstr "Затваряне"
+
+#~ msgid "Close"
+#~ msgstr "Затваряне"
+
+#~ msgid "Error: %1"
+#~ msgstr "Грешка: %1"
+
+#~ msgid "Create New"
+#~ msgstr "Създаване на"
+
+#~ msgid "Link to Device"
+#~ msgstr "Връзка към устройство"
+
+#~ msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+#~ msgstr "<qt>Няма шаблон <b>%1</b>.</qt>"
+
+#~ msgid "File name:"
+#~ msgstr "Файл:"
+
+#~ msgid ""
+#~ "Basic links can only point to local files or directories.\n"
+#~ "Please use \"Link to Location\" for remote URLs."
+#~ msgstr ""
+#~ "Връзките могат да сочат само към локални файлове или директории. "
+#~ "Използвайте \"Връзка към местоположение\" за отдалечени URL-адреси."

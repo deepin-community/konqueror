@@ -1,0 +1,472 @@
+/* This file is part of the KDE project
+   Copyright 2009 Pino Toscano <pino@kde.org>
+
+   This program is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public
+   License as published by the Free Software Foundation; either
+   version 2 of the License, or (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; see the file COPYING.  If not, write to
+   the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+   Boston, MA 02110-1301, USA.
+*/
+
+#include "konqhistorymodel.h"
+
+#include "konqhistory.h"
+#include "konq_historyprovider.h"
+
+#include <KLocalizedString>
+#include <kio/global.h>
+#include <kprotocolinfo.h>
+
+#include <QHash>
+#include <QList>
+#include <QLocale>
+#include <QIcon>
+
+namespace KHM
+{
+
+struct Entry {
+    enum Type {
+        History,
+        Group,
+        Root
+    };
+
+    Entry(Type _type)
+        : type(_type)
+    {}
+
+    virtual ~Entry()
+    {}
+
+    virtual QVariant data(int /*role*/, int /*column*/) const
+    {
+        return QVariant();
+    }
+
+    const Type type;
+};
+
+struct HistoryEntry : public Entry {
+    HistoryEntry(const KonqHistoryEntry &_entry, GroupEntry *_parent);
+
+    QVariant data(int role, int column) const override;
+    void update(const KonqHistoryEntry &entry);
+
+    KonqHistoryEntry entry;
+    GroupEntry *parent;
+    QIcon icon;
+};
+
+struct GroupEntry : public Entry {
+    GroupEntry(const QUrl &_url, const QString &_key);
+
+    ~GroupEntry() override
+    {
+        qDeleteAll(entries);
+    }
+
+    QVariant data(int role, int column) const override;
+    HistoryEntry *findChild(const KonqHistoryEntry &entry, int *index = nullptr) const;
+    QList<QUrl> urls() const;
+
+    QList<HistoryEntry *> entries;
+    QUrl url;
+    QString key;
+    QIcon icon;
+    bool hasFavIcon : 1;
+};
+
+struct RootEntry : public Entry {
+    RootEntry()
+        : Entry(Root)
+    {}
+
+    ~RootEntry() override
+    {
+        qDeleteAll(groups);
+    }
+
+    QList<GroupEntry *> groups;
+    QHash<QString, GroupEntry *> groupsByName;
+};
+
+HistoryEntry::HistoryEntry(const KonqHistoryEntry &_entry, GroupEntry *_parent)
+    : Entry(History), entry(_entry), parent(_parent)
+{
+    parent->entries.append(this);
+
+    update(entry);
+}
+
+QVariant HistoryEntry::data(int role, int /*column*/) const
+{
+    switch (role) {
+    case Qt::DisplayRole: {
+        QString title = entry.title;
+        if (title.trimmed().isEmpty() || title == entry.url.url()) {
+            QString path(entry.url.path());
+            if (path.isEmpty()) {
+                path += '/';
+            }
+            title = path;
+        }
+        return title;
+    }
+    case Qt::DecorationRole:
+        return icon;
+    case Qt::ToolTipRole:
+        return entry.url.url();
+    case KonqHistory::TypeRole:
+        return int(KonqHistory::HistoryType);
+    case KonqHistory::DetailedToolTipRole:
+        return i18n("<qt><center><b>%1</b></center><hr />Last visited: %2<br />"
+                    "First visited: %3<br />Number of times visited: %4</qt>",
+                    entry.url.toDisplayString().toHtmlEscaped(),
+                    QLocale().toString(entry.lastVisited),
+                    QLocale().toString(entry.firstVisited),
+                    entry.numberOfTimesVisited);
+    case KonqHistory::LastVisitedRole:
+        return entry.lastVisited;
+    case KonqHistory::UrlRole:
+        return entry.url;
+    }
+    return QVariant();
+}
+
+void HistoryEntry::update(const KonqHistoryEntry &_entry)
+{
+    entry = _entry;
+
+    const QString path = entry.url.path();
+    if (parent->hasFavIcon && (path.isNull() || path == QLatin1String("/"))) {
+        icon = parent->icon;
+    } else {
+        icon = QIcon::fromTheme(KProtocolInfo::icon(entry.url.scheme()));
+    }
+}
+
+GroupEntry::GroupEntry(const QUrl &_url, const QString &_key)
+    : Entry(Group), url(_url), key(_key), hasFavIcon(false)
+{
+    const QString iconPath = KIO::favIconForUrl(url);
+    if (iconPath.isEmpty()) {
+        icon = QIcon::fromTheme(QStringLiteral("folder"));
+    } else {
+        icon = QIcon(iconPath);
+        hasFavIcon = true;
+    }
+}
+
+QVariant GroupEntry::data(int role, int /*column*/) const
+{
+    switch (role) {
+    case Qt::DisplayRole:
+        return key;
+    case Qt::DecorationRole:
+        return icon;
+    case KonqHistory::TypeRole:
+        return int(KonqHistory::GroupType);
+    case KonqHistory::LastVisitedRole: {
+        if (entries.isEmpty()) {
+            return QDateTime();
+        }
+        QDateTime dt = entries.first()->entry.lastVisited;
+        Q_FOREACH (HistoryEntry *e, entries) {
+            if (e->entry.lastVisited > dt) {
+                dt = e->entry.lastVisited;
+            }
+        }
+        return dt;
+    }
+    }
+    return QVariant();
+}
+
+HistoryEntry *GroupEntry::findChild(const KonqHistoryEntry &entry, int *index) const
+{
+    HistoryEntry *item = nullptr;
+    QList<HistoryEntry *>::const_iterator it = entries.constBegin(), itEnd = entries.constEnd();
+    int i = 0;
+    for (; it != itEnd; ++it, ++i) {
+        if ((*it)->entry.url == entry.url) {
+            item = *it;
+            break;
+        }
+    }
+    if (index) {
+        *index = item ? i : -1;
+    }
+    return item;
+}
+
+QList<QUrl> GroupEntry::urls() const
+{
+    QList<QUrl> list;
+    Q_FOREACH (HistoryEntry *e, entries) {
+        list.append(e->entry.url);
+    }
+    return list;
+}
+
+}
+
+static QString groupForUrl(const QUrl &url)
+{
+    if (url.isLocalFile()) {
+        static const QString &local = i18n("Local");
+        return local;
+    }
+    static const QString &misc = i18n("Miscellaneous");
+    return url.host().isEmpty() ? misc : url.host();
+}
+
+KonqHistoryModel::KonqHistoryModel(QObject *parent)
+    : QAbstractItemModel(parent), m_root(new KHM::RootEntry())
+{
+    KonqHistoryProvider *provider = KonqHistoryProvider::self();
+
+    connect(provider, SIGNAL(cleared()), this, SLOT(clear()));
+    connect(provider, SIGNAL(entryAdded(KonqHistoryEntry)),
+            this, SLOT(slotEntryAdded(KonqHistoryEntry)));
+    connect(provider, SIGNAL(entryRemoved(KonqHistoryEntry)),
+            this, SLOT(slotEntryRemoved(KonqHistoryEntry)));
+
+    KonqHistoryList entries(provider->entries());
+
+    KonqHistoryList::const_iterator it = entries.constBegin();
+    const KonqHistoryList::const_iterator end = entries.constEnd();
+    for (; it != end; ++it) {
+        KHM::GroupEntry *group = getGroupItem((*it).url, DontEmitSignals);
+        KHM::HistoryEntry *item = new KHM::HistoryEntry((*it), group);
+        Q_UNUSED(item);
+    }
+}
+
+KonqHistoryModel::~KonqHistoryModel()
+{
+    delete m_root;
+}
+
+int KonqHistoryModel::columnCount(const QModelIndex &parent) const
+{
+    KHM::Entry *entry = entryFromIndex(parent, true);
+    switch (entry->type) {
+    case KHM::Entry::History:
+        return 0;
+    case KHM::Entry::Group:
+    case KHM::Entry::Root:
+        return 1;
+    }
+    return 0;
+}
+
+QVariant KonqHistoryModel::data(const QModelIndex &index, int role) const
+{
+    KHM::Entry *entry = entryFromIndex(index);
+    if (!entry) {
+        return QVariant();
+    }
+
+    return entry->data(role, index.column());
+}
+
+QModelIndex KonqHistoryModel::index(int row, int column, const QModelIndex &parent) const
+{
+    if (row < 0 || column != 0) {
+        return QModelIndex();
+    }
+
+    KHM::Entry *entry = entryFromIndex(parent, true);
+    switch (entry->type) {
+    case KHM::Entry::History:
+        return QModelIndex();
+    case KHM::Entry::Group: {
+        const KHM::GroupEntry *ge = static_cast<KHM::GroupEntry *>(entry);
+        if (row >= ge->entries.count()) {
+            return QModelIndex();
+        }
+        return createIndex(row, column, ge->entries.at(row));
+    }
+    case KHM::Entry::Root: {
+        const KHM::RootEntry *re = static_cast<KHM::RootEntry *>(entry);
+        if (row >= re->groups.count()) {
+            return QModelIndex();
+        }
+        return createIndex(row, column, re->groups.at(row));
+    }
+    }
+    return QModelIndex();
+}
+
+QModelIndex KonqHistoryModel::parent(const QModelIndex &index) const
+{
+    KHM::Entry *entry = entryFromIndex(index);
+    if (!entry) {
+        return QModelIndex();
+    }
+    switch (entry->type) {
+    case KHM::Entry::History:
+        return indexFor(static_cast<KHM::HistoryEntry *>(entry)->parent);
+    case KHM::Entry::Group:
+    case KHM::Entry::Root:
+        return QModelIndex();
+    }
+    return QModelIndex();
+}
+
+int KonqHistoryModel::rowCount(const QModelIndex &parent) const
+{
+    KHM::Entry *entry = entryFromIndex(parent, true);
+    switch (entry->type) {
+    case KHM::Entry::History:
+        return 0;
+    case KHM::Entry::Group:
+        return static_cast<KHM::GroupEntry *>(entry)->entries.count();
+    case KHM::Entry::Root:
+        return static_cast<KHM::RootEntry *>(entry)->groups.count();
+    }
+    return 0;
+}
+
+void KonqHistoryModel::deleteItem(const QModelIndex &index)
+{
+    KHM::Entry *entry = entryFromIndex(index);
+    if (!entry) {
+        return;
+    }
+
+    KonqHistoryProvider *provider = KonqHistoryProvider::self();
+    switch (entry->type) {
+    case KHM::Entry::History:
+        provider->emitRemoveFromHistory(static_cast<KHM::HistoryEntry *>(entry)->entry.url);
+        break;
+    case KHM::Entry::Group:
+        provider->emitRemoveListFromHistory(static_cast<KHM::GroupEntry *>(entry)->urls());
+        break;
+    case KHM::Entry::Root:
+        break;
+    }
+}
+
+void KonqHistoryModel::clear()
+{
+    if (m_root->groups.isEmpty()) {
+        return;
+    }
+
+    beginResetModel();
+    delete m_root;
+    m_root = new KHM::RootEntry();
+    endResetModel();
+}
+
+void KonqHistoryModel::slotEntryAdded(const KonqHistoryEntry &entry)
+{
+    KHM::GroupEntry *group = getGroupItem(entry.url, EmitSignals);
+    KHM::HistoryEntry *item = group->findChild(entry);
+    if (!item) {
+        beginInsertRows(indexFor(group), group->entries.count(), group->entries.count());
+        item = new KHM::HistoryEntry(entry, group);
+        endInsertRows();
+    } else {
+        // Do not update existing entries, otherwise items jump around when clicking on them (#61450)
+        if (item->entry.lastVisited.isValid()) {
+            return;
+        }
+        item->update(entry);
+        const QModelIndex index = indexFor(item);
+        emit dataChanged(index, index);
+    }
+    // update the parent item, so the sorting by date is updated accordingly
+    const QModelIndex groupIndex = indexFor(group);
+    emit dataChanged(groupIndex, groupIndex);
+}
+
+void KonqHistoryModel::slotEntryRemoved(const KonqHistoryEntry &entry)
+{
+    const QString groupKey = groupForUrl(entry.url);
+    KHM::GroupEntry *group = m_root->groupsByName.value(groupKey);
+    if (!group) {
+        return;
+    }
+
+    int index = 0;
+    KHM::HistoryEntry *item = group->findChild(entry, &index);
+    if (index == -1) {
+        return;
+    }
+
+    if (group->entries.count() > 1) {
+        beginRemoveRows(indexFor(group), index, index);
+        group->entries.removeAt(index);
+        delete item;
+        endRemoveRows();
+    } else {
+        index = m_root->groups.indexOf(group);
+        if (index == -1) {
+            return;
+        }
+
+        beginRemoveRows(QModelIndex(), index, index);
+        m_root->groupsByName.remove(groupKey);
+        m_root->groups.removeAt(index);
+        delete group;
+        endRemoveRows();
+    }
+}
+
+KHM::Entry *KonqHistoryModel::entryFromIndex(const QModelIndex &index, bool returnRootIfNull) const
+{
+    if (index.isValid()) {
+        return reinterpret_cast<KHM::Entry *>(index.internalPointer());
+    }
+    return returnRootIfNull ? m_root : nullptr;
+}
+
+KHM::GroupEntry *KonqHistoryModel::getGroupItem(const QUrl &url, SignalEmission se)
+{
+    const QString &groupKey = groupForUrl(url);
+    KHM::GroupEntry *group = m_root->groupsByName.value(groupKey);
+    if (!group) {
+        if (se == EmitSignals) {
+            beginInsertRows(QModelIndex(), m_root->groups.count(), m_root->groups.count());
+        }
+        group = new KHM::GroupEntry(url, groupKey);
+        m_root->groups.append(group);
+        m_root->groupsByName.insert(groupKey, group);
+        if (se == EmitSignals) {
+            endInsertRows();
+        }
+    }
+
+    return group;
+}
+
+QModelIndex KonqHistoryModel::indexFor(KHM::HistoryEntry *entry) const
+{
+    const int row = entry->parent->entries.indexOf(entry);
+    if (row < 0) {
+        return QModelIndex();
+    }
+    return createIndex(row, 0, entry);
+}
+
+QModelIndex KonqHistoryModel::indexFor(KHM::GroupEntry *entry) const
+{
+    const int row = m_root->groups.indexOf(entry);
+    if (row < 0) {
+        return QModelIndex();
+    }
+    return createIndex(row, 0, entry);
+}
+

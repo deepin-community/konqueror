@@ -1,0 +1,119 @@
+# translation of khtmlsettingsplugin.po to Icelandic
+# Copyright (C) 2003, 2006, 2009, 2011 Free Software Foundation, Inc.
+#
+# Pjetur G. Hjaltason <pjetur@pjetur.net>, 2003.
+# Arnar Leósson <leosson@frisurf.no>, 2003.
+# Sveinn í Felli <sveinki@nett.is>, 2009, 2011, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: khtmlsettingsplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-12-27 03:43+0100\n"
+"PO-Revision-Date: 2018-01-10 08:44+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic <translation-team-is@lists.sourceforge.net>\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Richard Allen, Sveinn í Felli"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "ra@ra.is, sv1@fellsnet.is"
+
+#. i18n: ectx: Menu (tools)
+#: khtmlsettingsplugin.rc:4
+#, kde-format
+msgid "&Tools"
+msgstr "&Verkfæri"
+
+#. i18n: ectx: ToolBar (extraToolBar)
+#: khtmlsettingsplugin.rc:8
+#, kde-format
+msgid "Extra Toolbar"
+msgstr "Auka-verkfærastika"
+
+#: settingsplugin.cpp:62 settingsplugin.cpp:64
+#, kde-format
+msgid "HTML Settings"
+msgstr "HTML-stillingar"
+
+#: settingsplugin.cpp:73
+#, kde-format
+msgid "Java&Script"
+msgstr "Java&Script"
+
+#: settingsplugin.cpp:78
+#, kde-format
+msgid "&Java"
+msgstr "&Java"
+
+#: settingsplugin.cpp:83
+#, kde-format
+msgid "&Cookies"
+msgstr "Vef&kökur"
+
+#: settingsplugin.cpp:88
+#, kde-format
+msgid "&Plugins"
+msgstr "Við&bætur"
+
+#: settingsplugin.cpp:93
+#, kde-format
+msgid "Autoload &Images"
+msgstr "Sækja &myndir sjálfvirkt"
+
+#: settingsplugin.cpp:100
+#, kde-format
+msgid "Enable Pro&xy"
+msgstr "Nota &milliþjón"
+
+#: settingsplugin.cpp:105
+#, kde-format
+msgid "Enable Cac&he"
+msgstr "Virkja &skyndiminni"
+
+#: settingsplugin.cpp:110
+#, kde-format
+msgid "Cache Po&licy"
+msgstr "Skyndiminnis&tefna"
+
+#: settingsplugin.cpp:112
+#, kde-format
+msgid "&Keep Cache in Sync"
+msgstr "Halda skyndiminni &samhæfðu"
+
+#: settingsplugin.cpp:113
+#, kde-format
+msgid "&Use Cache if Possible"
+msgstr "Nota skyndi&minni ef mögulegt"
+
+#: settingsplugin.cpp:114
+#, kde-format
+msgid "&Offline Browsing Mode"
+msgstr "Ó&nettengdur vafurhamur."
+
+#: settingsplugin.cpp:211
+#, kde-format
+msgid ""
+"The cookie setting could not be changed, because the cookie daemon could not "
+"be contacted."
+msgstr ""
+"Ekki er hægt að breyta stillingum fyrir vefkökur því ekki var hægt að ræsa "
+"neinn vefkökumiðlara."
+
+#: settingsplugin.cpp:213
+#, kde-format
+msgctxt "@title:window"
+msgid "Cookie Settings Unavailable"
+msgstr "Stillingar fyrir vefkökur ekki tiltækar"

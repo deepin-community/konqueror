@@ -1,0 +1,13 @@
+konqueror: package-name-doesnt-match-sonames libkdeinit5-kfmclient libkdeinit5-konqueror libkonqsidebarplugin5 libkonquerorprivate5 libkwebenginepart
+konqueror: shared-library-lacks-version usr/lib/*/libkdeinit5_kfmclient.so libkdeinit5_kfmclient.so
+konqueror: shared-library-lacks-version usr/lib/*/libkwebenginepart.so libkwebenginepart.so
+konqueror: shared-library-lacks-version usr/lib/*/libkdeinit5_konqueror.so libkdeinit5_konqueror.so
+konqueror: no-symbols-control-file usr/lib/*/libkonquerorprivate.so.*
+konqueror: no-symbols-control-file usr/lib/*/libkdeinit5_kfmclient.so
+konqueror: no-symbols-control-file usr/lib/*/libkdeinit5_konqueror.so
+konqueror: no-symbols-control-file usr/lib/*/libkwebenginepart.so
+konqueror: no-symbols-control-file usr/lib/*/libkonqsidebarplugin.so.*
+# it's the in-browser about page
+konqueror: package-contains-documentation-outside-usr-share-doc usr/share/konqueror/about/*
+# error pages for the web engine part
+konqueror: package-contains-documentation-outside-usr-share-doc usr/share/webenginepart/*

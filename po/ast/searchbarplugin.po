@@ -1,0 +1,78 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# enolp <enolp@softastur.org>, 2016, 2018, 2019, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2021-01-14 18:59+0100\n"
+"Last-Translator: enolp <enolp@softastur.org>\n"
+"Language-Team: Asturian <alministradores@softastur.org>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.12.1\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Barra de busca<p>Introduz un términu de busca. Calca nel iconu pa camudar el "
+"mou de busca o'l fornidor.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Barra de busca"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Enfocar la barra de busca"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Atopar nesta páxina"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Esbillar motores de busca…"
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr ""
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Activar suxerencies"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Barra de ferramientes de busca"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr ""
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Nome:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Atayos:"

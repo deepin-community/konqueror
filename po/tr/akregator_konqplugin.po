@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Cemil MUTLU <mawilos@gmail.com>, 2005
+# Görkem Çetin <gorkem@kde.org>, 2004
+# S.Çağlar Onur <caglar@uludag.org.tr>, 2005
+# obsoleteman <tulliana@gmail.com>, 2008-2009,2012
+# Volkan Gezer <volkangezer@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: applications-kde4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2014-06-08 13:42+0000\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/applications-k-"
+"tr/language/tr/)\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: akregatorplugin.cpp:74
+#, fuzzy, kde-format
+#| msgid "Add Feed to Akregator"
+msgctxt "@action:inmenu"
+msgid "Add Feed to Akregator"
+msgstr "Haber Kaynağını AKregator Uygulamasına Ekle"
+
+#: konqfeedicon.cpp:143
+#, kde-format
+msgid "Add Feed to Akregator"
+msgstr "Haber Kaynağını AKregator Uygulamasına Ekle"
+
+#: konqfeedicon.cpp:145
+#, kde-format
+msgid "Add Feeds to Akregator"
+msgstr "Haber Kaynaklarını AKregator Uygulamasına Ekle"
+
+#: konqfeedicon.cpp:154
+#, kde-format
+msgid "Add All Found Feeds to Akregator"
+msgstr "Bulunan Bütün Haber Kaynaklarını Akregator Uygulamasına Ekle"
+
+#: konqfeedicon.cpp:178
+#, kde-format
+msgid "Subscribe to site updates (using news feed)"
+msgstr "Site güncellemelerine abone ol (haber kaynağı kullanarak)"
+
+#: pluginutil.cpp:52 pluginutil.cpp:62
+#, kde-format
+msgid "Imported Feeds"
+msgstr "Alınmış haber kaynakları"
+
+#: pluginutil.cpp:54
+#, kde-format
+msgid "Unable to contact Akregator via D-Bus"
+msgstr ""
+
+#: pluginutil.cpp:55
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "The DBus call addFeedToGroup failed"
+msgctxt "@title:window"
+msgid "D-Bus call failed"
+msgstr "DBus çağrısı addFeedToGroup başarısız oldu"
+
+#~ msgid "Akregator feed icon - DBus Call failed"
+#~ msgstr "Akregator besleme simgesi - DBus Çağrısı başarısız oldu"

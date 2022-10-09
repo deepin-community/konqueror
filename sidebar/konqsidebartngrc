@@ -1,0 +1,11 @@
+[default]
+OpenViews=places.desktop
+SingleWidgetMode=true
+
+[filemanagement]
+OpenViews=root.desktop
+SingleWidgetMode=true
+
+[webbrowsing]
+OpenViews=bookmarks.desktop
+SingleWidgetMode=true

@@ -1,0 +1,224 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmperformance\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-11-30 02:26+0100\n"
+"PO-Revision-Date: 2008-01-03 16:50+0000\n"
+"Last-Translator: Zlatko Popov <zlatkopopov@fsa-bg.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kcmperformance.cpp:42
+#, kde-format
+msgid ""
+"<h1>KDE Performance</h1> You can configure settings that improve KDE "
+"performance here."
+msgstr ""
+"<h1>Производителност на KDE</h1> От тук може да контролирате ресурсите, с "
+"които KDE разполага и съответно да оптимизирате определени дейности."
+
+#: kcmperformance.cpp:49
+#, kde-format
+msgid "Konqueror"
+msgstr "Браузър Konqueror"
+
+#: kcmperformance.cpp:52
+#, kde-format
+msgid "System"
+msgstr "Система"
+
+#: kcmperformance.cpp:77
+#, kde-format
+msgid ""
+"<h1>Konqueror Performance</h1> You can configure several settings that "
+"improve Konqueror performance here. These include options for reusing "
+"already running instances and for keeping instances preloaded."
+msgstr ""
+"<h1>Производителност на браузъра Konqueror</h1> От тук може да контролирате "
+"ресурсите, с които браузъра Konqueror разполага и съответно да оптимизирате "
+"определени дейности."
+
+#: konqueror.cpp:36
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>If enabled, an instance of Konqueror will be preloaded after the "
+#| "ordinary KDE startup sequence.</p><p>This will make the first Konqueror "
+#| "window open faster, but at the expense of longer KDE startup times (but "
+#| "you will be able to work while it is loading, so you may not even notice "
+#| "that it is taking longer).</p>"
+msgid ""
+"<p>If enabled, an instance of Konqueror will be preloaded after the ordinary "
+"Plasma startup sequence.</p><p>This will make the first Konqueror window "
+"open faster, but at the expense of longer Plasma startup times (but you will "
+"be able to work while it is loading, so you may not even notice that it is "
+"taking longer).</p>"
+msgstr ""
+"<p>Ако отметката е включена, при стартиране на системата винаги ще се "
+"зарежда една инстанция на браузъра.</p><p>Като резултат, системата ще се "
+"стартира малко по-бавно, но пък браузъра ще е зареден в паметта и при "
+"натискане на бутона за стартиране няма да чакате да се зареди.</p>"
+
+#: konqueror.cpp:42
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>If enabled, KDE will always try to have one preloaded Konqueror "
+#| "instance ready; preloading a new instance in the background whenever "
+#| "there is not one available, so that windows will always open quickly.</"
+#| "p><p><b>Warning:</b> In some cases, it is actually possible that this "
+#| "will reduce perceived performance.</p>"
+msgid ""
+"<p>If enabled, Konqueror will always try to have one preloaded instance "
+"ready; preloading a new instance in the background whenever there is not one "
+"available, so that windows will always open quickly.</p><p><b>Warning:</b> "
+"In some cases, it is actually possible that this will reduce perceived "
+"performance.</p>"
+msgstr ""
+"<p>Ако отметката е включена, системата ще се старае винаги да има една "
+"предварително заредена инстанция на браузъра в паметта. Всеки път, когато "
+"поискате да отворите нов прозорец, ще се използва тази инстанция. Нова "
+"инстанция ще се създава по време, когато системата не е натоварена.</"
+"p><p>Имайте предвид, че в зависимост от системата, с която разполагате, и "
+"това какво правите, включването на тази отметка може да доведе до обратен "
+"ефект (забавяне на системата вместо забързване).</p>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: konqueror_ui.ui:17
+#, kde-format
+msgid "Preloading"
+msgstr "Предварително зареждане"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cb_preload_on_startup)
+#: konqueror_ui.ui:23
+#, fuzzy, kde-format
+#| msgid "Preload an instance after KDE startup"
+msgid "Preload an instance after desktop startup"
+msgstr "Зареждане на браузъра при стартиране на KDE"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cb_always_have_preloaded)
+#: konqueror_ui.ui:30
+#, fuzzy, kde-format
+#| msgid "Always try to have at least one preloaded instance"
+msgid "Always try to have one preloaded instance"
+msgstr "Зареждане поне на един екземпляр на браузъра"
+
+#: system.cpp:34
+#, kde-format
+msgid ""
+"<p>During startup KDE needs to perform a check of its system configuration "
+"(mimetypes, installed applications, etc.), and in case the configuration has "
+"changed since the last time, the system configuration cache (KSyCoCa) needs "
+"to be updated.</p><p>This option delays the check, which avoid scanning all "
+"directories containing files describing the system during KDE startup, thus "
+"making KDE startup faster. However, in the rare case the system "
+"configuration has changed since the last time, and the change is needed "
+"before this delayed check takes place, this option may lead to various "
+"problems (missing applications in the K Menu, reports from applications "
+"about missing required mimetypes, etc.).</p><p>Changes of system "
+"configuration mostly happen by (un)installing applications. It is therefore "
+"recommended to turn this option temporarily off while (un)installing "
+"applications.</p>"
+msgstr ""
+"<p>По време на стартиране KDE трябва да извърши проверка на системната "
+"настройка (файлове типове, инсталирани програми и пр.). Ако е променена след "
+"последното стартиране, системата трябва да обнови кеш-паметта (KSyCoCa).</"
+"p><p>Настройката изключва проверката и това ускорява зареждането на "
+"системата. Но в някои случаи е възможно системната настройка да е променена "
+"по някакъв начин. Примерно, ръчно, чрез редактиране на файловете с настройки "
+"или при инсталиране и/или деинсталиране на програми, които променят "
+"настройките. В резултат е възможно да липсват програми в системното меню "
+"(К), някои програми да не намират файловите типове (MIME) и др. подобни "
+"проблеми.</p><p>Промените в системната настройка се случват рядко и главно "
+"при (де)инсталиране на програми. Ако (де)инсталирате програми, е "
+"препоръчително да изключите настройката.</p>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gb_)
+#: system_ui.ui:8
+#, kde-format
+msgid "System Configuration"
+msgstr "Системна настройка"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cb_disable_kbuildsycoca)
+#: system_ui.ui:14
+#, kde-format
+msgid "Disable &system configuration startup check"
+msgstr "&Без проверка на системната настройка при стартиране"
+
+#. i18n: ectx: property (text), widget (QLabel, label_kbuildsycoca)
+#: system_ui.ui:21
+#, kde-format
+msgid ""
+"This option may in rare cases lead to various problems. Consult the What's "
+"This (Shift+F1) help for details."
+msgstr ""
+"Тази настройка в редки случаи може да създаде проблеми. За повече информация "
+"погледнете помощното съобщение от типа \"Какво е това?\" (Shift+F1)."
+
+#~ msgid ""
+#~ "<p>If non-zero, this option allows keeping Konqueror instances in memory "
+#~ "after all their windows have been closed, up to the number specified in "
+#~ "this option.</p><p>When a new Konqueror instance is needed, one of these "
+#~ "preloaded instances will be reused instead, improving responsiveness at "
+#~ "the expense of the memory required by the preloaded instances.</p>"
+#~ msgstr ""
+#~ "<p>Ако стойността е по-голяма от нула, ще се запазват стартирани "
+#~ "зададения брой инстанции на браузъра в паметта, дори всички прозорци да "
+#~ "са затворени.</p><p>Всеки път, когато поискате да стартирате браузъра, "
+#~ "едно от тези копия ще бъде използвано. По този начин се увеличава "
+#~ "бързодействието, понеже няма да чакате да се зарежда друго копие. Разбира "
+#~ "се, използваната памет в този случай е доста повече.</p>"
+
+#, fuzzy
+#~| msgid "Maximum number of instances kept &preloaded:"
+#~ msgid "&Maximum number of instances kept preloaded:"
+#~ msgstr "&Максимален брой екземпляри на браузъра:"
+
+#~ msgid ""
+#~ "Disables the minimization of memory usage and allows you to make each "
+#~ "browsing activity independent from the others"
+#~ msgstr ""
+#~ "В този случай браузърът ще има за всеки процес различна инстанция, което "
+#~ "ще направи работата на браузъра по-бърза, но ще се използва повече памет."
+
+#~ msgid ""
+#~ "<p>With this option activated, only one instance of Konqueror used for "
+#~ "file browsing will exist in the memory of your computer at any moment, no "
+#~ "matter how many file browsing windows you open, thus reducing resource "
+#~ "requirements.</p><p>Be aware that this also means that, if something goes "
+#~ "wrong, all your file browsing windows will be closed simultaneously</p>"
+#~ msgstr ""
+#~ "<p>В този случай браузърът ще има само един процес за работа с файлове."
+#~ "Имайте предвид, че при грешка всички прозорци на браузъра ще бъдат "
+#~ "затворени.</p><p>Също така имайте предвид, че настройката се отнася само "
+#~ "за работа с файлове и не указва влияние на сърфирането в Интернет.</p>"
+
+#~ msgid ""
+#~ "<p>With this option activated, only one instance of Konqueror will exist "
+#~ "in the memory of your computer at any moment, no matter how many browsing "
+#~ "windows you open, thus reducing resource requirements.</p><p>Be aware "
+#~ "that this also means that, if something goes wrong, all your browsing "
+#~ "windows will be closed simultaneously.</p>"
+#~ msgstr ""
+#~ "<p>В този случай браузърът ще има само един процес независимо дали "
+#~ "работите с файлове или разглеждате Интернет.</p><p>Имайте предвид, че при "
+#~ "грешка всички прозорци на браузъра ще бъдат затворени.</p>"
+
+#~ msgid "Minimize Memory Usage"
+#~ msgstr "Минимизиране на използваната памет"
+
+#~ msgid "&Never"
+#~ msgstr "&Никога"
+
+#~ msgid "For &file browsing only (recommended)"
+#~ msgstr "&Само за работа с файлове (препоръчва се)"
+
+#~ msgid "Alwa&ys (use with care)"
+#~ msgstr "В&инаги (не се препоръчва)"

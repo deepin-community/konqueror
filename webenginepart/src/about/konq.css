@@ -1,0 +1,19 @@
+#headerL {
+  background-image: url(top-left-konqueror.png);
+}
+
+#boxCenter {
+  padding: 1em;
+}
+
+.sepTable {
+  border: 1px solid #BDBDBD;
+}
+
+.specTableTitle {
+  background-color: #909090;
+}
+
+.specTableSubTitle {
+  background-color: #444444;
+}

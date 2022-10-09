@@ -1,0 +1,47 @@
+#!/usr/bin/dh-exec
+[amd64 arm64 armhf i386 mipsel] usr/bin/kcreatewebarchive
+[amd64 arm64 armhf i386 mipsel] usr/lib/*/qt5/plugins/webarchiverplugin.so
+[amd64 arm64 armhf i386 mipsel] usr/lib/*/qt5/plugins/webarchivethumbnail.so
+[amd64 arm64 armhf i386 mipsel] usr/share/config.kcfg/kcreatewebarchive.kcfg
+[amd64 arm64 armhf i386 mipsel] usr/share/icons/hicolor/*/actions/webarchiver.png
+[amd64 arm64 armhf i386 mipsel] usr/share/kservices5/webarchivethumbnail.desktop
+etc/xdg/translaterc
+usr/bin/fsview
+usr/lib/*/qt5/plugins/akregatorkonqfeedicon.so
+usr/lib/*/qt5/plugins/autorefresh.so
+usr/lib/*/qt5/plugins/babelfishplugin.so
+usr/lib/*/qt5/plugins/dirfilterplugin.so
+usr/lib/*/qt5/plugins/kf5/parts/fsviewpart.so
+usr/lib/*/qt5/plugins/kf5/kfileitemaction/akregatorplugin.so
+usr/lib/*/qt5/plugins/khtmlsettingsplugin.so
+usr/lib/*/qt5/plugins/khtmlttsplugin.so
+usr/lib/*/qt5/plugins/kimgallery.so
+usr/lib/*/qt5/plugins/konq_shellcmdplugin.so
+usr/lib/*/qt5/plugins/searchbarplugin.so
+usr/lib/*/qt5/plugins/uachangerplugin.so
+usr/share/akregator/pics/feed.png
+usr/share/dolphinpart/
+usr/share/icons/hicolor/*/actions/babelfish.png
+usr/share/icons/hicolor/*/actions/imagegallery.png
+usr/share/icons/hicolor/*/apps/fsview.png
+usr/share/kf5/kbookmark/directory_bookmarkbar.desktop
+usr/share/khtml/
+usr/share/kservices5/akregator_konqplugin.desktop
+usr/share/kservices5/filebehavior.desktop
+usr/share/kservices5/fsview_part.desktop
+usr/share/kservices5/khtml_*.desktop
+usr/share/kxmlgui5/fsview/fsview_part.rc
+usr/share/locale/*/LC_MESSAGES/akregator_konqplugin.mo
+usr/share/locale/*/LC_MESSAGES/autorefresh.mo
+usr/share/locale/*/LC_MESSAGES/babelfish.mo
+usr/share/locale/*/LC_MESSAGES/dirfilterplugin.mo
+usr/share/locale/*/LC_MESSAGES/fsview.mo
+usr/share/locale/*/LC_MESSAGES/imgalleryplugin.mo
+usr/share/locale/*/LC_MESSAGES/khtmlsettingsplugin.mo
+usr/share/locale/*/LC_MESSAGES/khtmltts.mo
+usr/share/locale/*/LC_MESSAGES/kshellcmdplugin.mo
+usr/share/locale/*/LC_MESSAGES/searchbarplugin.mo
+usr/share/locale/*/LC_MESSAGES/uachangerplugin.mo
+usr/share/locale/*/LC_MESSAGES/webarchiver.mo
+usr/share/qlogging-categories5/akregatorplugin.categories
+usr/share/qlogging-categories5/fsview.categories

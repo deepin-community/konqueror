@@ -1,0 +1,287 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007, 2008.
+# Yasen Pramatarov <yasen@lindeas.com>, 2010, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmkonq\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-07-18 02:12+0200\n"
+"PO-Revision-Date: 2011-07-12 22:13+0300\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: behaviour.cpp:48
+#, kde-format
+msgid ""
+"<h1>Konqueror Behavior</h1> You can configure how Konqueror behaves as a "
+"file manager here."
+msgstr ""
+"<h1>Поведение</h1> От тук може да настроите поведението на Konqueror като "
+"файлов браузър."
+
+#: behaviour.cpp:52
+#, kde-format
+msgid "Misc Options"
+msgstr "Допълнителни настройки"
+
+#: behaviour.cpp:61
+#, kde-format
+msgid "Open folders in separate &windows"
+msgstr "Отваря&не на директориите в нов прозорец"
+
+#: behaviour.cpp:62
+#, kde-format
+msgid ""
+"If this option is checked, Konqueror will open a new window when you open a "
+"folder, rather than showing that folder's contents in the current window."
+msgstr ""
+"Ако отметката е включена, когато щракнете върху директория тя ще бъде "
+"отворена в нов прозорец, а не в същия."
+
+#: behaviour.cpp:85
+#, kde-format
+msgid "Show 'Delete' me&nu entries which bypass the trashcan"
+msgstr "Показване на \"&Изтриване\" в менютата, заобикалящо кошчето"
+
+#: behaviour.cpp:89
+#, kde-format
+msgid ""
+"Check this if you want 'Delete' menu commands to be displayed on the desktop "
+"and in the file manager's menus and context menus. You can always delete "
+"files by holding the Shift key while calling 'Move to Trash'."
+msgstr ""
+"Включете това, ако искате командите \"Изтриване\" да се показват в менютата "
+"и контекстните менюта на екрана и във файловия мениджър. Винаги можете да "
+"изтриване файлове, като задържате клавиша \"Shift\" при избиране на "
+"действието \"Преместване в кошчето\"."
+
+#~ msgctxt "@title:window"
+#~ msgid "Menu Editor"
+#~ msgstr "Редактор на менюто"
+
+#~ msgid "Menu"
+#~ msgstr "Меню"
+
+#~ msgid "New..."
+#~ msgstr "Ново..."
+
+#~ msgid "Remove"
+#~ msgstr "Изтриване"
+
+#~ msgid "Move Up"
+#~ msgstr "Преместване нагоре"
+
+#~ msgid "Move Down"
+#~ msgstr "Преместване надолу"
+
+#~ msgid ""
+#~ "<h1>Paths</h1>\n"
+#~ "This module allows you to choose where in the filesystem the files on "
+#~ "your desktop should be stored.\n"
+#~ "Use the \"Whats This?\" (Shift+F1) to get help on specific options."
+#~ msgstr ""
+#~ "<h1>Пътища</h1>\n"
+#~ "От тук може да настроите къде да се съхраняват файловете от работния "
+#~ "плот.\n"
+#~ "Използвайте \"Какво е това?\" (Shift+F1), за да видите помощта за "
+#~ "отделните опции."
+
+#, fuzzy
+#~| msgid "Des&ktop path:"
+#~ msgid "Desktop path:"
+#~ msgstr "Директория за &работния плот:"
+
+#~ msgid ""
+#~ "This folder contains all the files which you see on your desktop. You can "
+#~ "change the location of this folder if you want to, and the contents will "
+#~ "move automatically to the new location as well."
+#~ msgstr ""
+#~ "<p>Тази директория съдържа всички файлове, които виждате на работния "
+#~ "плот. </p><p>Може да промените местоположението на директорията по свое "
+#~ "желание, при което съдържанието и автоматично ще се премести в новата "
+#~ "директория.</p>"
+
+#, fuzzy
+#~| msgid "A&utostart path:"
+#~ msgid "Autostart path:"
+#~ msgstr "Директория за &автоматично стартиране:"
+
+#~ msgid ""
+#~ "This folder contains applications or links to applications (shortcuts) "
+#~ "that you want to have started automatically whenever KDE starts. You can "
+#~ "change the location of this folder if you want to, and the contents will "
+#~ "move automatically to the new location as well."
+#~ msgstr ""
+#~ "<p>Тази директория съдържа програми или символни връзки към програми, "
+#~ "които се стартират автоматично при включване в системата. Ако искате "
+#~ "някоя програма да се стартира автоматично всеки път когато влезете в KDE, "
+#~ "трябва да я копирате в тази директория или да създадете връзка. </"
+#~ "p><p>Може да промените местоположението на директорията по свое желание, "
+#~ "при което съдържанието и автоматично ще се премести в новата директория.</"
+#~ "p>"
+
+#, fuzzy
+#~| msgid "D&ocuments path:"
+#~ msgid "Documents path:"
+#~ msgstr "Директория за &документи:"
+
+#~ msgid ""
+#~ "This folder will be used by default to load or save documents from or to."
+#~ msgstr ""
+#~ "<p>Тази директория се използва за съхранение на вашите документи по "
+#~ "подразбиране. Когато отваряте или записвате файл, ще бъде показвана тази "
+#~ "директория по подразбиране. Разбира се, може да изберете друга "
+#~ "директория, в която да запишете документа си. </p><p>Може да промените "
+#~ "местоположението на директорията по свое желание, при което съдържанието "
+#~ "и автоматично ще се премести в новата директория.</p>"
+
+#, fuzzy
+#~| msgid "D&ocuments path:"
+#~ msgid "Downloads path:"
+#~ msgstr "Директория за &документи:"
+
+#, fuzzy
+#~| msgid ""
+#~| "This folder will be used by default to load or save documents from or to."
+#~ msgid "This folder will be used by default to save your downloaded items."
+#~ msgstr ""
+#~ "<p>Тази директория се използва за съхранение на вашите документи по "
+#~ "подразбиране. Когато отваряте или записвате файл, ще бъде показвана тази "
+#~ "директория по подразбиране. Разбира се, може да изберете друга "
+#~ "директория, в която да запишете документа си. </p><p>Може да промените "
+#~ "местоположението на директорията по свое желание, при което съдържанието "
+#~ "и автоматично ще се премести в новата директория.</p>"
+
+#, fuzzy
+#~| msgid "D&ocuments path:"
+#~ msgid "Movies path:"
+#~ msgstr "Директория за &документи:"
+
+#, fuzzy
+#~| msgid ""
+#~| "This folder will be used by default to load or save documents from or to."
+#~ msgid ""
+#~ "This folder will be used by default to load or save movies from or to."
+#~ msgstr ""
+#~ "<p>Тази директория се използва за съхранение на вашите документи по "
+#~ "подразбиране. Когато отваряте или записвате файл, ще бъде показвана тази "
+#~ "директория по подразбиране. Разбира се, може да изберете друга "
+#~ "директория, в която да запишете документа си. </p><p>Може да промените "
+#~ "местоположението на директорията по свое желание, при което съдържанието "
+#~ "и автоматично ще се премести в новата директория.</p>"
+
+#, fuzzy
+#~| msgid "D&ocuments path:"
+#~ msgid "Pictures path:"
+#~ msgstr "Директория за &документи:"
+
+#, fuzzy
+#~| msgid ""
+#~| "This folder will be used by default to load or save documents from or to."
+#~ msgid ""
+#~ "This folder will be used by default to load or save pictures from or to."
+#~ msgstr ""
+#~ "<p>Тази директория се използва за съхранение на вашите документи по "
+#~ "подразбиране. Когато отваряте или записвате файл, ще бъде показвана тази "
+#~ "директория по подразбиране. Разбира се, може да изберете друга "
+#~ "директория, в която да запишете документа си. </p><p>Може да промените "
+#~ "местоположението на директорията по свое желание, при което съдържанието "
+#~ "и автоматично ще се премести в новата директория.</p>"
+
+#, fuzzy
+#~| msgid ""
+#~| "This folder will be used by default to load or save documents from or to."
+#~ msgid ""
+#~ "This folder will be used by default to load or save music from or to."
+#~ msgstr ""
+#~ "<p>Тази директория се използва за съхранение на вашите документи по "
+#~ "подразбиране. Когато отваряте или записвате файл, ще бъде показвана тази "
+#~ "директория по подразбиране. Разбира се, може да изберете друга "
+#~ "директория, в която да запишете документа си. </p><p>Може да промените "
+#~ "местоположението на директорията по свое желание, при което съдържанието "
+#~ "и автоматично ще се премести в новата директория.</p>"
+
+#~ msgid "Autostart"
+#~ msgstr "Autostart"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"
+
+#, fuzzy
+#~| msgid "D&ocuments path:"
+#~ msgid "Documents"
+#~ msgstr "Директория за &документи:"
+
+#, fuzzy
+#~| msgctxt "Move desktop files from old to new place"
+#~| msgid "Move"
+#~ msgid "Movies"
+#~ msgstr "Преместване"
+
+#~ msgid ""
+#~ "The path for '%1' has been changed.\n"
+#~ "Do you want the files to be moved from '%2' to '%3'?"
+#~ msgstr ""
+#~ "Пътят за \"%1\" е променен.\n"
+#~ "Искате ли файловете да бъдат преместени от \"%2\" в \"%3\"?"
+
+#, fuzzy
+#~| msgctxt "Move desktop files from old to new place"
+#~| msgid "Move"
+#~ msgctxt "Move files from old to new place"
+#~ msgid "Move"
+#~ msgstr "Преместване"
+
+#, fuzzy
+#~| msgid ""
+#~| "The path for '%1' has been changed.\n"
+#~| "Do you want the files to be moved from '%2' to '%3'?"
+#~ msgid ""
+#~ "The path for '%1' has been changed.\n"
+#~ "Do you want to move the directory '%2' to '%3'?"
+#~ msgstr ""
+#~ "Пътят за \"%1\" е променен.\n"
+#~ "Искате ли файловете да бъдат преместени от \"%2\" в \"%3\"?"
+
+#, fuzzy
+#~| msgctxt "Move desktop files from old to new place"
+#~| msgid "Move"
+#~ msgctxt "Move the directory"
+#~ msgid "Move"
+#~ msgstr "Преместване"
+
+#~ msgid "Confirmation Required"
+#~ msgstr "Потвърждение"
+
+#~ msgctxt "@title:group what to do when a file is deleted"
+#~ msgid "Ask Confirmation For"
+#~ msgstr "Искане на потвърждение"
+
+#~ msgid ""
+#~ "This option tells Konqueror whether to ask for a confirmation when you "
+#~ "\"delete\" a file. <ul><li><em>Move To Trash:</em> moves the file to your "
+#~ "trash folder, from where it can be recovered very easily.</li> "
+#~ "<li><em>Delete:</em> simply deletes the file.</li> </ul>"
+#~ msgstr ""
+#~ "При включени отметки файловия браузър Konqueror ще изисква потвърждение "
+#~ "при различните начини за премахване на файла.<ul><li><em>Преместване в "
+#~ "кошчето</em>: Преместване на избрания файл във кошчето, от където той "
+#~ "може да бъде възстановен.</li> <li><em>Изтриване</em>: Изтриване на "
+#~ "файла. При тази операция файлът не може да възстановен със стандартни "
+#~ "средства.</li> </ul>"
+
+#~ msgctxt "@option:check Ask for confirmation when moving to trash"
+#~ msgid "&Move to trash"
+#~ msgstr "Преместване в ко&шчето"
+
+#~ msgctxt "@option:check Ask for confirmation when deleting"
+#~ msgid "D&elete"
+#~ msgstr "Из&триване"

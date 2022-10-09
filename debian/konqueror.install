@@ -1,0 +1,54 @@
+#!/usr/bin/dh-exec
+[amd64 arm64 armhf i386 mipsel] usr/lib/*/libkwebenginepart.so
+[amd64 arm64 armhf i386 mipsel] usr/lib/*/qt5/plugins/kf5/parts/webenginepart.so
+[amd64 arm64 armhf i386 mipsel] usr/share/icons/hicolor/*/apps/webengine.png
+[amd64 arm64 armhf i386 mipsel] usr/share/kconf_update/webenginepart.upd
+[amd64 arm64 armhf i386 mipsel] usr/share/kservices5/webenginepart.desktop
+[amd64 arm64 armhf i386 mipsel] usr/share/kxmlgui5/webenginepart/
+etc/xdg/autostart/konqy_preload.desktop
+etc/xdg/konqsidebartngrc
+usr/bin/kfmclient
+usr/bin/konqueror
+usr/lib/*/libkdeinit5_kfmclient.so
+usr/lib/*/libkdeinit5_konqueror.so
+usr/lib/*/libkonqsidebarplugin.so.*
+usr/lib/*/libkonquerorprivate.so.*
+usr/lib/*/qt5/plugins/kcm_bookmarks.so
+usr/lib/*/qt5/plugins/kcm_history.so
+usr/lib/*/qt5/plugins/kcm_konq.so
+usr/lib/*/qt5/plugins/kcm_konqhtml.so
+usr/lib/*/qt5/plugins/kcm_performance.so
+usr/lib/*/qt5/plugins/kf5/parts/konq_sidebar.so
+usr/lib/*/qt5/plugins/konqsidebar_bookmarks.so
+usr/lib/*/qt5/plugins/konqsidebar_history.so
+usr/lib/*/qt5/plugins/konqsidebar_places.so
+usr/lib/*/qt5/plugins/konqsidebar_tree.so
+usr/share/applications/kfmclient.desktop
+usr/share/applications/kfmclient_*.desktop
+usr/share/applications/konqbrowser.desktop
+usr/share/config.kcfg/konqueror.kcfg
+usr/share/dbus-1/interfaces/org.kde.Konqueror.*.xml
+usr/share/doc/HTML/*/kcontrol5/
+usr/share/doc/HTML/*/konqueror/
+usr/share/icons/hicolor/*/apps/konqueror.png
+usr/share/kcmcss/
+usr/share/kcontrol/pics/*png
+usr/share/konqsidebartng/
+usr/share/konqueror/
+usr/share/kservices5/bookmarks.desktop
+usr/share/kservices5/kcmhistory.desktop
+usr/share/kservices5/kcmkonqyperformance.desktop
+usr/share/kservices5/kcmperformance.desktop
+usr/share/kservices5/konq_sidebartng.desktop
+usr/share/kservices5/org.kde.konqueror.desktop
+usr/share/kwebkitpart/
+usr/share/locale/*/LC_MESSAGES/kcmbookmarks.mo
+usr/share/locale/*/LC_MESSAGES/kcmkonq.mo
+usr/share/locale/*/LC_MESSAGES/kcmkonqhtml.mo
+usr/share/locale/*/LC_MESSAGES/kcmperformance.mo
+usr/share/locale/*/LC_MESSAGES/kfmclient.mo
+usr/share/locale/*/LC_MESSAGES/konqueror.mo
+usr/share/locale/*/LC_MESSAGES/webenginepart.mo
+usr/share/metainfo/org.kde.konqueror.appdata.xml
+usr/share/qlogging-categories5/konqueror.categories
+usr/share/webenginepart/

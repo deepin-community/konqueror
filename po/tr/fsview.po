@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Translators:
+# Cemil MUTLU <mawilos@gmail.com>, 2005
+# Engin ÇAĞATAY <engincagatay@yahoo.com>, 2003
+# Görkem Çetin <gorkem@kde.org>, 2003
+# H. İbrahim Güngör <ibrahim@pardus.org.tr>, 2011
+# obsoleteman <tulliana@gmail.com>, 2008-2009,2012
+# Volkan Gezer <volkangezer@gmail.com>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: applications-kde4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-12-04 02:26+0100\n"
+"PO-Revision-Date: 2014-06-08 13:42+0000\n"
+"Last-Translator: Volkan Gezer <volkangezer@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/applications-k-"
+"tr/language/tr/)\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Engin ÇAĞATAY"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "engincagatay@yahoo.com"
+
+#: fsview.cpp:47 fsview.cpp:425
+#, kde-format
+msgid "Name"
+msgstr "İsim"
+
+#: fsview.cpp:48
+#, kde-format
+msgid "Size"
+msgstr "Boyut"
+
+#: fsview.cpp:49
+#, kde-format
+msgid "File Count"
+msgstr "Dosya Sayısı"
+
+#: fsview.cpp:50
+#, kde-format
+msgid "Directory Count"
+msgstr "Dizin Sayısı"
+
+#: fsview.cpp:51
+#, kde-format
+msgid "Last Modified"
+msgstr "Son Değiştirilme"
+
+#: fsview.cpp:52 fsview.cpp:426
+#, kde-format
+msgid "Owner"
+msgstr "Sahibi"
+
+#: fsview.cpp:53 fsview.cpp:427
+#, kde-format
+msgid "Group"
+msgstr "Grubu"
+
+#: fsview.cpp:54 fsview.cpp:428
+#, kde-format
+msgid "Mime Type"
+msgstr "Mime Türü"
+
+#: fsview.cpp:295
+#, kde-format
+msgid "Go To"
+msgstr "Git"
+
+#: fsview.cpp:296 fsview_part.cpp:132
+#, kde-format
+msgid "Stop at Depth"
+msgstr "Duruş Derinliği"
+
+#: fsview.cpp:297 fsview_part.cpp:129
+#, kde-format
+msgid "Stop at Area"
+msgstr "Duruş Noktası"
+
+#: fsview.cpp:298
+#, kde-format
+msgid "Stop at Name"
+msgstr "Duruş İsmi"
+
+#: fsview.cpp:304
+#, kde-format
+msgid "Go Up"
+msgstr "Üste Git"
+
+#: fsview.cpp:306
+#, kde-format
+msgid "Stop Refresh"
+msgstr "Tazelemeyi Durdur"
+
+#: fsview.cpp:308
+#, kde-format
+msgid "Refresh"
+msgstr "Tazele"
+
+#: fsview.cpp:313
+#, kde-format
+msgid "Refresh '%1'"
+msgstr "Tazele : '%1'"
+
+#: fsview.cpp:325 fsview_part.cpp:139
+#, kde-format
+msgid "Color Mode"
+msgstr "Renkli Görünüm"
+
+#: fsview.cpp:328 fsview_part.cpp:135
+#, kde-format
+msgid "Visualization"
+msgstr "Görsellik"
+
+#: fsview.cpp:423
+#, kde-format
+msgid "None"
+msgstr "Hiçbiri"
+
+#: fsview.cpp:424
+#, kde-format
+msgid "Depth"
+msgstr "Derinlik"
+
+#: fsview_part.cpp:84
+#, kde-format
+msgid "Read 1 folder, in %2"
+msgid_plural "Read %1 folders, in %2"
+msgstr[0] "%2 içinde %1 dizin okundu"
+msgstr[1] "%2 içinde %1 dizin okundu"
+
+#: fsview_part.cpp:88
+#, kde-format
+msgid "1 folder"
+msgid_plural "%1 folders"
+msgstr[0] "%1 dizin"
+msgstr[1] "%1 dizin"
+
+#: fsview_part.cpp:105 main.cpp:23
+#, kde-format
+msgid "FSView"
+msgstr "FSView"
+
+#: fsview_part.cpp:106 main.cpp:24
+#, kde-format
+msgid "Filesystem Viewer"
+msgstr "Dosya Sistemi Görüntüleyicisi"
+
+#: fsview_part.cpp:108 main.cpp:26
+#, kde-format
+msgid "(c) 2002, Josef Weidendorfer"
+msgstr "(c) 2002, Josef Weidendorfer"
+
+#: fsview_part.cpp:113
+#, kde-format
+msgid ""
+"<p>This is the FSView plugin, a graphical browsing mode showing filesystem "
+"utilization by using a tree map visualization.</p><p>Note that in this mode, "
+"automatic updating when filesystem changes are made is intentionally <b>not</"
+"b> done.</p><p>For details on usage and options available, see the online "
+"help under menu 'Help/FSView Manual'.</p>"
+msgstr ""
+"<p>FSView eklentisi, görsel bir arayüz yardımıyla dosya sistemindeki ögeleri "
+"bir ağaç şeklinde gösterir.</p><p> Bu görünüm altında dosyalar üzerindeki "
+"değişiklikler anında görüntülenemeyecektir. </p><p> Kullanım seçenekleri "
+"hakkında detaylı bilgilere Yardım/FSView Kılavuzu menüsü altından "
+"erişebilirsiniz.</p>"
+
+#: fsview_part.cpp:145
+#, kde-format
+msgid "&FSView Manual"
+msgstr "&FSView Kılavuzu"
+
+#: fsview_part.cpp:147
+#, kde-format
+msgid "Show FSView manual"
+msgstr "FSView kılavuzunu göster"
+
+#: fsview_part.cpp:148
+#, kde-format
+msgid "Opens the help browser with the FSView documentation"
+msgstr "FSView belgeleri kullanarak yardım penceresini açar"
+
+#: fsview_part.cpp:180
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "Çöp Kutusuna Taşı"
+
+#: fsview_part.cpp:187
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Delete"
+msgstr "Sil"
+
+#: fsview_part.cpp:192
+#, kde-format
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr "&Dosya Türünü Düzenle..."
+
+#: fsview_part.cpp:196
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "Özellikler"
+
+#: fsview_part.cpp:229
+#, kde-format
+msgid ""
+"FSView intentionally does not support automatic updates when changes are "
+"made to files or directories, currently visible in FSView, from the "
+"outside.\n"
+"For details, see the 'Help/FSView Manual'."
+msgstr ""
+"FSView, dosya ya da dizinler üzerinde bir değişiklik yapıldığı anda etkin "
+"görünümü otomatik olarak değiştirmez.\n"
+"Daha çok detay için Yardım/FSView Kılavuzu'nu okuyun."
+
+#. i18n: ectx: Menu (edit)
+#: fsview_part.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "Dü&zen"
+
+#. i18n: ectx: Menu (view)
+#: fsview_part.rc:13
+#, kde-format
+msgid "&View"
+msgstr "&Görünüm"
+
+#. i18n: ectx: Menu (help)
+#: fsview_part.rc:20
+#, kde-format
+msgid "&Help"
+msgstr "&Yardım"
+
+#: main.cpp:33
+#, kde-format
+msgid "View filesystem starting from this folder"
+msgstr "Bu dizinden başlayarak dosya sistemini görüntüle"
+
+#: treemap.cpp:1448
+#, kde-format
+msgid "Text %1"
+msgstr "%1 Metni"
+
+#: treemap.cpp:3175
+#, kde-format
+msgid "Recursive Bisection"
+msgstr "Özyinelemeli"
+
+#: treemap.cpp:3177
+#, kde-format
+msgid "Columns"
+msgstr "Sütunlar"
+
+#: treemap.cpp:3179
+#, kde-format
+msgid "Rows"
+msgstr "Sıralar"
+
+#: treemap.cpp:3181
+#, kde-format
+msgid "Always Best"
+msgstr "Her Zaman En İyisi"
+
+#: treemap.cpp:3183
+#, kde-format
+msgid "Best"
+msgstr "En İyi"
+
+#: treemap.cpp:3185
+#, kde-format
+msgid "Alternate (V)"
+msgstr "Diğer (V)"
+
+#: treemap.cpp:3187
+#, kde-format
+msgid "Alternate (H)"
+msgstr "Diğer (H)"
+
+#: treemap.cpp:3189
+#, kde-format
+msgid "Horizontal"
+msgstr "Yatay"
+
+#: treemap.cpp:3191
+#, kde-format
+msgid "Vertical"
+msgstr "Dikey"
+
+#: treemap.cpp:3243
+#, kde-format
+msgid "Nesting"
+msgstr "Dallanma"
+
+#: treemap.cpp:3247
+#, kde-format
+msgid "Border"
+msgstr "Kenarlık"
+
+#: treemap.cpp:3250
+#, kde-format
+msgid "Correct Borders Only"
+msgstr "Sadece Kenarları Düzelt"
+
+#: treemap.cpp:3253
+#, kde-format
+msgid "Width %1"
+msgstr "Genişlik %1"
+
+#: treemap.cpp:3256
+#, kde-format
+msgid "Allow Rotation"
+msgstr "Dönmeye İzin Ver"
+
+#: treemap.cpp:3257
+#, kde-format
+msgid "Shading"
+msgstr "Gölgeleme"
+
+#: treemap.cpp:3268
+#, kde-format
+msgid "Visible"
+msgstr "Görünür"
+
+#: treemap.cpp:3269
+#, kde-format
+msgid "Take Space From Children"
+msgstr "Alt Çocuklardan Boşluk Al"
+
+#: treemap.cpp:3273
+#, kde-format
+msgid "Top Left"
+msgstr "Üst Sol"
+
+#: treemap.cpp:3276
+#, kde-format
+msgid "Top Center"
+msgstr "Üst Orta"
+
+#: treemap.cpp:3279
+#, kde-format
+msgid "Top Right"
+msgstr "Üst Sağ"
+
+#: treemap.cpp:3282
+#, kde-format
+msgid "Bottom Left"
+msgstr "Alt Sol"
+
+#: treemap.cpp:3285
+#, kde-format
+msgid "Bottom Center"
+msgstr "Alt Orta"
+
+#: treemap.cpp:3288
+#, kde-format
+msgid "Bottom Right"
+msgstr "Alt Sağ"
+
+#: treemap.cpp:3355
+#, kde-format
+msgid "No %1 Limit"
+msgstr "%1 Limiti Yok"
+
+#: treemap.cpp:3414
+#, kde-format
+msgid "No Area Limit"
+msgstr "Alan Limiti Yok"
+
+#: treemap.cpp:3420
+#, kde-format
+msgid "Area of '%1' (%2)"
+msgstr "'%1' (%2) Alanı "
+
+#: treemap.cpp:3432 treemap.cpp:3445
+#, kde-format
+msgid "1 Pixel"
+msgid_plural "%1 Pixels"
+msgstr[0] "1 Piksel"
+msgstr[1] "%1 Piksel"
+
+#: treemap.cpp:3449
+#, kde-format
+msgid "Double Area Limit (to %1)"
+msgstr "Çift Alan Limiti (%1 için)"
+
+#: treemap.cpp:3451
+#, kde-format
+msgid "Halve Area Limit (to %1)"
+msgstr "Yarım Alan Liniti (%1 için)"
+
+#: treemap.cpp:3487
+#, kde-format
+msgid "No Depth Limit"
+msgstr "Derinlik Limiti Yok"
+
+#: treemap.cpp:3493
+#, kde-format
+msgid "Depth of '%1' (%2)"
+msgstr "'%1' (%2) için Derinlik"
+
+#: treemap.cpp:3505 treemap.cpp:3518
+#, kde-format
+msgid "Depth %1"
+msgstr "Derinlik %1"
+
+#: treemap.cpp:3522
+#, kde-format
+msgid "Decrement (to %1)"
+msgstr "Azaltım (%1)"
+
+#: treemap.cpp:3524
+#, kde-format
+msgid "Increment (to %1)"
+msgstr "Artım (%1)"
+
+#~ msgid "Filesystem Utilization Viewer"
+#~ msgstr "Dosya Sistemi Kullanım İzleyici"
+
+#~ msgid "(c) 2003-2005, Josef Weidendorfer"
+#~ msgstr "(c) 2003-2005, Josef Weidendorfer"

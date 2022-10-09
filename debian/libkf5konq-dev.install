@@ -1,0 +1,4 @@
+usr/include/KF5/konq_*.h
+usr/include/KF5/libkonq_export.h
+usr/lib/*/cmake/KF5Konq/
+usr/lib/*/libKF5Konq.so

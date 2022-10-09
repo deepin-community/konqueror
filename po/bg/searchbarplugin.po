@@ -1,0 +1,88 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Zlatko Popov <zlatkopopov@fsa-bg.org>, 2007.
+# Yasen Pramatarov <yasen@lindeas.com>, 2009, 2010, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: searchbarplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2013-08-14 10:49+0300\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Лента за търсене<p>Въведете думи за търсене. Натиснете иконата, за да "
+"промените режима на търсене или търсачката.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Лента за търсене"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Активиране на лентата за търсене"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Търсене в страницата"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Избор на търсачка..."
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr "Добавяне на %1..."
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Включване на предложения"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Лента за търсене"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr "Съкращения за адреси"
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Име:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Съкращение:"
+
+#~ msgid "Cancel"
+#~ msgstr "Отказ"
+
+#~ msgid "OK"
+#~ msgstr "Добре"
+
+#~ msgid "Ok"
+#~ msgstr "ОК"

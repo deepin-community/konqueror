@@ -1,0 +1,428 @@
+# translation of fsview.po to Persian
+# Nazanin Kazemi <kazemi@itland.ir>, 2006, 2007.
+# MaryamSadat Razavi <razavi@itland.ir>, 2006.
+# Tahereh Dadkhahfar <dadkhahfar@itland.ir>, 2006.
+# Nasim Daniarzadeh <daniarzadeh@itland.ir>, 2006.
+# Mohamad Reza Mirdamadi <mohi@ubuntu.ir>, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: fsview\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-12-04 02:26+0100\n"
+"PO-Revision-Date: 2011-09-27 16:10+0330\n"
+"Last-Translator: Mohamad Reza Mirdamadi <mohi@ubuntu.ir>\n"
+"Language-Team: Farsi (Persian) <>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "محمدرضا میردامادی , نازنین کاظمی"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "mohi@ubuntu.ir , kazemi@itland.ir"
+
+#: fsview.cpp:47 fsview.cpp:425
+#, kde-format
+msgid "Name"
+msgstr "نام"
+
+#: fsview.cpp:48
+#, kde-format
+msgid "Size"
+msgstr "اندازه"
+
+#: fsview.cpp:49
+#, kde-format
+msgid "File Count"
+msgstr "شمارش پرونده"
+
+#: fsview.cpp:50
+#, kde-format
+msgid "Directory Count"
+msgstr "شمارش فهرست راهنما"
+
+#: fsview.cpp:51
+#, kde-format
+msgid "Last Modified"
+msgstr "آخرین تغییر"
+
+#: fsview.cpp:52 fsview.cpp:426
+#, kde-format
+msgid "Owner"
+msgstr "مالک"
+
+#: fsview.cpp:53 fsview.cpp:427
+#, kde-format
+msgid "Group"
+msgstr "گروه"
+
+#: fsview.cpp:54 fsview.cpp:428
+#, kde-format
+msgid "Mime Type"
+msgstr "نوع مایم"
+
+#: fsview.cpp:295
+#, kde-format
+msgid "Go To"
+msgstr "برو به"
+
+#: fsview.cpp:296 fsview_part.cpp:132
+#, kde-format
+msgid "Stop at Depth"
+msgstr "ایست در عمق"
+
+#: fsview.cpp:297 fsview_part.cpp:129
+#, kde-format
+msgid "Stop at Area"
+msgstr "ایست در ناحیه"
+
+#: fsview.cpp:298
+#, kde-format
+msgid "Stop at Name"
+msgstr "ایست در نام"
+
+#: fsview.cpp:304
+#, kde-format
+msgid "Go Up"
+msgstr "برو بالا"
+
+#: fsview.cpp:306
+#, kde-format
+msgid "Stop Refresh"
+msgstr "ایست بازآوری"
+
+#: fsview.cpp:308
+#, kde-format
+msgid "Refresh"
+msgstr "بازآوری"
+
+#: fsview.cpp:313
+#, kde-format
+msgid "Refresh '%1'"
+msgstr "بازآوری »%1«"
+
+#: fsview.cpp:325 fsview_part.cpp:139
+#, kde-format
+msgid "Color Mode"
+msgstr "حالت رنگ"
+
+#: fsview.cpp:328 fsview_part.cpp:135
+#, kde-format
+msgid "Visualization"
+msgstr "تجسم"
+
+#: fsview.cpp:423
+#, kde-format
+msgid "None"
+msgstr "هیچ‌کدام"
+
+#: fsview.cpp:424
+#, kde-format
+msgid "Depth"
+msgstr "عمق"
+
+#: fsview_part.cpp:84
+#, kde-format
+msgid "Read 1 folder, in %2"
+msgid_plural "Read %1 folders, in %2"
+msgstr[0] "خواندن %1 پوشه، در %2"
+
+#: fsview_part.cpp:88
+#, kde-format
+msgid "1 folder"
+msgid_plural "%1 folders"
+msgstr[0] "%1 پوشه‌"
+
+#: fsview_part.cpp:105 main.cpp:23
+#, kde-format
+msgid "FSView"
+msgstr "نمای سیستم پرونده"
+
+#: fsview_part.cpp:106 main.cpp:24
+#, kde-format
+msgid "Filesystem Viewer"
+msgstr "مشاهده‌گر سیستم پرونده"
+
+#: fsview_part.cpp:108 main.cpp:26
+#, kde-format
+msgid "(c) 2002, Josef Weidendorfer"
+msgstr "(c) 2002, Josef Weidendorfer"
+
+#: fsview_part.cpp:113
+#, kde-format
+msgid ""
+"<p>This is the FSView plugin, a graphical browsing mode showing filesystem "
+"utilization by using a tree map visualization.</p><p>Note that in this mode, "
+"automatic updating when filesystem changes are made is intentionally <b>not</"
+"b> done.</p><p>For details on usage and options available, see the online "
+"help under menu 'Help/FSView Manual'.</p>"
+msgstr ""
+"<p>این وصله نمای سیستم پرونده است، یک سودمندی سیستم پرونده نمایش‌ حالت مرورگر "
+"نگاره‌ای با استفاده از تجسم نگاشت درخت.</p><p>دقت کنید که در این حالت، "
+"به‌روزرسانی خودکار هنگامی‌که تغییرات سیستم پرونده ایجاد می‌شوند، عمداً انجام "
+"<b>نمی‌شود</b>. برای جزئیات درباره کاربرد و گزینه‌های موجود، کمک برخط را در "
+"زیر گزینگان »کمک/راهنمای نمای سیستم پرونده« ببینید. </p>"
+
+#: fsview_part.cpp:145
+#, kde-format
+msgid "&FSView Manual"
+msgstr "راهنمای &نمای سیستم پرونده‌"
+
+#: fsview_part.cpp:147
+#, kde-format
+msgid "Show FSView manual"
+msgstr "نمایش راهنمای نمای سیستم پرونده"
+
+#: fsview_part.cpp:148
+#, kde-format
+msgid "Opens the help browser with the FSView documentation"
+msgstr "مرورگر کمک را توسط مستندات نمای سیستم پرونده باز می‌کند"
+
+#: fsview_part.cpp:180
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Move to Trash"
+msgstr "حرکت به زباله‌دان"
+
+#: fsview_part.cpp:187
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Delete"
+msgstr "حذف"
+
+#: fsview_part.cpp:192
+#, kde-format
+msgctxt "@action:inmenu Edit"
+msgid "&Edit File Type..."
+msgstr "&ویرایش نوع پرونده..."
+
+#: fsview_part.cpp:196
+#, kde-format
+msgctxt "@action:inmenu File"
+msgid "Properties"
+msgstr "ویژگیها"
+
+#: fsview_part.cpp:229
+#, kde-format
+msgid ""
+"FSView intentionally does not support automatic updates when changes are "
+"made to files or directories, currently visible in FSView, from the "
+"outside.\n"
+"For details, see the 'Help/FSView Manual'."
+msgstr ""
+"نمای سیستم پرونده، هنگام ایجاد تغییرات در پرونده‌ها یا فهرستهای راهنما که "
+"اکنون از بیرون مرئی است، عمداً به‌روزرسانیهای خودکار را پشتیبانی نمی‌کند.\n"
+"برای جزئیات، »کمک/راهنمای نمای سیستم پرونده« را ببینید."
+
+#. i18n: ectx: Menu (edit)
+#: fsview_part.rc:4
+#, kde-format
+msgid "&Edit"
+msgstr "&ویرایش‌"
+
+#. i18n: ectx: Menu (view)
+#: fsview_part.rc:13
+#, kde-format
+msgid "&View"
+msgstr "&نما‌"
+
+#. i18n: ectx: Menu (help)
+#: fsview_part.rc:20
+#, kde-format
+msgid "&Help"
+msgstr "&کمک‌"
+
+#: main.cpp:33
+#, kde-format
+msgid "View filesystem starting from this folder"
+msgstr "نمای آغاز سیستم پرونده از این پوشه"
+
+#: treemap.cpp:1448
+#, kde-format
+msgid "Text %1"
+msgstr "متن %1"
+
+#: treemap.cpp:3175
+#, kde-format
+msgid "Recursive Bisection"
+msgstr "دو بخشی بازگشتی"
+
+#: treemap.cpp:3177
+#, kde-format
+msgid "Columns"
+msgstr "ستونها"
+
+#: treemap.cpp:3179
+#, kde-format
+msgid "Rows"
+msgstr "سطرها"
+
+#: treemap.cpp:3181
+#, kde-format
+msgid "Always Best"
+msgstr "همیشه بهترین"
+
+#: treemap.cpp:3183
+#, kde-format
+msgid "Best"
+msgstr "بهترین"
+
+#: treemap.cpp:3185
+#, kde-format
+msgid "Alternate (V)"
+msgstr "متناوب کردن )عمودی("
+
+#: treemap.cpp:3187
+#, kde-format
+msgid "Alternate (H)"
+msgstr "متناوب کردن )افقی("
+
+#: treemap.cpp:3189
+#, kde-format
+msgid "Horizontal"
+msgstr "افقی"
+
+#: treemap.cpp:3191
+#, kde-format
+msgid "Vertical"
+msgstr "عمودی"
+
+#: treemap.cpp:3243
+#, kde-format
+msgid "Nesting"
+msgstr "تودرتویی"
+
+#: treemap.cpp:3247
+#, kde-format
+msgid "Border"
+msgstr "لبه"
+
+#: treemap.cpp:3250
+#, kde-format
+msgid "Correct Borders Only"
+msgstr "فقط لبه‌های صحیح"
+
+#: treemap.cpp:3253
+#, kde-format
+msgid "Width %1"
+msgstr "عرض %1"
+
+#: treemap.cpp:3256
+#, kde-format
+msgid "Allow Rotation"
+msgstr "اجازه چرخش"
+
+#: treemap.cpp:3257
+#, kde-format
+msgid "Shading"
+msgstr "سایه"
+
+#: treemap.cpp:3268
+#, kde-format
+msgid "Visible"
+msgstr "مرئی"
+
+#: treemap.cpp:3269
+#, kde-format
+msgid "Take Space From Children"
+msgstr "فاصله گرفتن از فرزندان"
+
+#: treemap.cpp:3273
+#, kde-format
+msgid "Top Left"
+msgstr "چپ بالا"
+
+#: treemap.cpp:3276
+#, kde-format
+msgid "Top Center"
+msgstr "مرکز بالا"
+
+#: treemap.cpp:3279
+#, kde-format
+msgid "Top Right"
+msgstr "راست بالا"
+
+#: treemap.cpp:3282
+#, kde-format
+msgid "Bottom Left"
+msgstr "چپ پایین"
+
+#: treemap.cpp:3285
+#, kde-format
+msgid "Bottom Center"
+msgstr "مرکز پایین"
+
+#: treemap.cpp:3288
+#, kde-format
+msgid "Bottom Right"
+msgstr "راست پایین"
+
+#: treemap.cpp:3355
+#, kde-format
+msgid "No %1 Limit"
+msgstr "حد %1 وجود ندارد"
+
+#: treemap.cpp:3414
+#, kde-format
+msgid "No Area Limit"
+msgstr "حد ناحیه وجود ندارد"
+
+#: treemap.cpp:3420
+#, kde-format
+msgid "Area of '%1' (%2)"
+msgstr "ناحیه %1 )%2("
+
+#: treemap.cpp:3432 treemap.cpp:3445
+#, kde-format
+msgid "1 Pixel"
+msgid_plural "%1 Pixels"
+msgstr[0] "%1 تصویردانه"
+
+#: treemap.cpp:3449
+#, kde-format
+msgid "Double Area Limit (to %1)"
+msgstr "دو برابر حد ناحیه )به %1("
+
+#: treemap.cpp:3451
+#, kde-format
+msgid "Halve Area Limit (to %1)"
+msgstr "دو نیم کردن حد ناحیه )به %1("
+
+#: treemap.cpp:3487
+#, kde-format
+msgid "No Depth Limit"
+msgstr "بدون حد عمق"
+
+#: treemap.cpp:3493
+#, kde-format
+msgid "Depth of '%1' (%2)"
+msgstr "عمق »%1« )%2("
+
+#: treemap.cpp:3505 treemap.cpp:3518
+#, kde-format
+msgid "Depth %1"
+msgstr "عمق %1"
+
+#: treemap.cpp:3522
+#, kde-format
+msgid "Decrement (to %1)"
+msgstr "کاهش )به %1("
+
+#: treemap.cpp:3524
+#, kde-format
+msgid "Increment (to %1)"
+msgstr "افزایش )به %1("
+
+#~ msgid "Filesystem Utilization Viewer"
+#~ msgstr "مشاهده‌گر سودمندی سیستم پرونده"
+
+#~ msgid "(c) 2003-2005, Josef Weidendorfer"
+#~ msgstr "(c) 2003-2005, Josef Weidendorfer"

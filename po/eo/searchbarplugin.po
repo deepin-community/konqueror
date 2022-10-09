@@ -1,0 +1,88 @@
+# Translation of searchbarplugin into esperanto.
+#
+# Axel Rousseau <axel@esperanto-jeunes.org>, 2009.
+# Michael Moroni <michael.moroni@mailoo.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: searchbarplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2012-05-23 11:43+0200\n"
+"Last-Translator: Michael Moroni <michael.moroni@mailoo.org>\n"
+"Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Esperanto\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Serĉbreto<p>Enigu serĉendan terminon. Alklaku sur la piktogramo por ŝanĝi "
+"serĉan reĝimon aŭ provizanton.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Serĉbreto"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Enfokusigi serĉbreton"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Trovi en ĉi tiu paĝo"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Elekti serĉmodulon..."
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr "Aldoni %1..."
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Enŝalti sugeston"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Serĉilobreto"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr "Agordi URI-klavkombinojn"
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Nomo:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Fulmoklavoj:"
+
+#~ msgid "Cancel"
+#~ msgstr "Nuligi"
+
+#~ msgid "OK"
+#~ msgstr "Bone"
+
+#~ msgid "Ok"
+#~ msgstr "Bone"

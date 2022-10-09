@@ -1,0 +1,90 @@
+# translation of searchbarplugin.po to Kazakh
+#
+# Sairan Kikkarin <sairan@computer.org>, 2006, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: searchbarplugin\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-10-24 02:22+0200\n"
+"PO-Revision-Date: 2012-12-09 06:20+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"\n"
+
+#: searchbar.cpp:79
+#, kde-format
+msgid ""
+"Search Bar<p>Enter a search term. Click on the icon to change search mode or "
+"provider.</p>"
+msgstr ""
+"Іздеу панелі<p>Іздейтін сөздерді келтіріңіз. Іздеу режімін не іздегішін "
+"ауыстыру үшін таңбашасын түртіңіз.</p>"
+
+#: searchbar.cpp:85
+#, kde-format
+msgid "Search Bar"
+msgstr "Іздеу панелі"
+
+#: searchbar.cpp:90
+#, kde-format
+msgid "Focus Searchbar"
+msgstr "Назарды іздеу панеліне ауыстыру"
+
+#: searchbar.cpp:307
+#, kde-format
+msgid "Find in This Page"
+msgstr "Осы бетте іздеу"
+
+#: searchbar.cpp:319
+#, kde-format
+msgid "Select Search Engines..."
+msgstr "Іздеу қызметін таңдау..."
+
+#: searchbar.cpp:338
+#, kde-format
+msgid "Add %1..."
+msgstr "%1 дегенді %1..."
+
+#: searchbar.cpp:589
+#, kde-format
+msgid "Enable Suggestion"
+msgstr "Ұсынысты рұқсат ету"
+
+#. i18n: ectx: ToolBar (locationToolBar)
+#: searchbar.rc:3
+#, kde-format
+msgid "Search Toolbar"
+msgstr "Іздеу құралдар панелі"
+
+#: WebShortcutWidget.cpp:46
+#, kde-format
+msgid "Set Uri Shortcuts"
+msgstr "URI қысқармаларын орнату"
+
+#: WebShortcutWidget.cpp:60
+#, kde-format
+msgid "Name:"
+msgstr "Атауы:"
+
+#: WebShortcutWidget.cpp:64
+#, kde-format
+msgid "Shortcuts:"
+msgstr "Қысқармалары:"
+
+#~ msgid "Cancel"
+#~ msgstr "Айну"
+
+#~ msgid "OK"
+#~ msgstr "ОК"
+
+#~ msgid "Ok"
+#~ msgstr "ОК"
+
+#~ msgid "%1 Search"
+#~ msgstr "%1 іздеу"

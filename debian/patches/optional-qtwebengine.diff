@@ -1,0 +1,78 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Make QtWebEngine an optional requirement
+ This makes it possible to build konqueror, albeith without an HTML component,
+ also on architectures that do not have QtWebEngine.
+Forwarded: no
+Last-Update: 2020-05-02
+
+---
+ CMakeLists.txt           |    7 +++++--
+ autotests/CMakeLists.txt |   12 ++++++++----
+ plugins/CMakeLists.txt   |    5 ++++-
+ 3 files changed, 17 insertions(+), 7 deletions(-)
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -30,7 +30,8 @@ include(GenerateExportHeader)
+ set(KONQUEROR_LIB_VERSION "${RELEASE_SERVICE_VERSION}")
+ set(KONQUEROR_VERSION "${KONQUEROR_LIB_VERSION}")
+ 
+-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Widgets WebEngineWidgets)
++find_package(Qt5 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Widgets)
++find_package(Qt5 ${QT_MIN_VERSION} COMPONENTS WebEngineWidgets)
+ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Parts KCMUtils Archive Crash WindowSystem Init IconThemes DBusAddons GuiAddons)
+ 
+ find_package(KF5 ${KF5_MIN_VERSION} COMPONENTS Activities DocTools) # Optional
+@@ -72,7 +73,9 @@ add_subdirectory( client )
+ if(BUILD_TESTING)
+     add_subdirectory( autotests )
+ endif()
+-add_subdirectory( webenginepart )
++if (Qt5WebEngineWidgets_FOUND)
++    add_subdirectory( webenginepart )
++endif()
+ 
+ add_subdirectory( pics )
+ add_subdirectory( sidebar )
+--- a/autotests/CMakeLists.txt
++++ b/autotests/CMakeLists.txt
+@@ -7,8 +7,10 @@ include_directories( ${CMAKE_CURRENT_SOU
+ 
+ ########### konqviewmgrtest ###############
+ 
+-ecm_add_test(konqviewmgrtest.cpp
+-    LINK_LIBRARIES kdeinit_konqueror Qt5::Core Qt5::Gui kwebenginepartlib Qt5::WebEngineWidgets Qt5::Test)
++if (Qt5WebEngineWidgets_FOUND)
++  ecm_add_test(konqviewmgrtest.cpp
++      LINK_LIBRARIES kdeinit_konqueror Qt5::Core Qt5::Gui kwebenginepartlib Qt5::WebEngineWidgets Qt5::Test)
++endif()
+ 
+ ########### historymanagertest ###############
+ 
+@@ -22,8 +24,10 @@ ecm_add_test(undomanagertest.cpp
+ 
+ ########### konqhtmltest ###############
+ 
+-ecm_add_test(konqhtmltest.cpp
+-    LINK_LIBRARIES kdeinit_konqueror kwebenginepartlib Qt5::Core Qt5::Test)
++if (Qt5WebEngineWidgets_FOUND)
++  ecm_add_test(konqhtmltest.cpp
++      LINK_LIBRARIES kdeinit_konqueror kwebenginepartlib Qt5::Core Qt5::Test)
++endif()
+ 
+ ########### konqviewtest ###############
+ 
+--- a/plugins/CMakeLists.txt
++++ b/plugins/CMakeLists.txt
+@@ -8,7 +8,10 @@ add_subdirectory( kimgalleryplugin )
+ add_subdirectory( dirfilter )
+ add_subdirectory( uachanger )
+ add_subdirectory( babelfish )
+-add_subdirectory( webarchiver )
++
++if (Qt5WebEngineWidgets_FOUND)
++   add_subdirectory( webarchiver )
++endif()
+ 
+ if (Qt5TextToSpeech_FOUND)
+    add_subdirectory(ttsplugin)
